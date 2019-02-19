@@ -1,0 +1,15 @@
+<mat-card>
+  <form class="loginform" [formGroup]="this?.loginForm" (ngSubmit)="submit()">
+    <mat-form-field>
+      <input matInput formControlName="username" placeholder="Username">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput formControlName="password" placeholder="Password" type="password">
+    </mat-form-field>
+
+    <button mat-flat-button type="submit" [disabled]="!this.loginForm.valid">Login</button>
+    <button mat-flat-button (click)="register()" class="registerButton">Register</button>
+
+  </form>
+</mat-card>

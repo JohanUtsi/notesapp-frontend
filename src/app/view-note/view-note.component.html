@@ -1,0 +1,23 @@
+<mat-card class="viewholder">
+
+  <div class="aSingleNoteMenuHolder">
+    <mat-menu #noteMenu="matMenu">
+      <button mat-menu-item>Edit Note</button>
+      <button mat-menu-item>Share Note</button>
+      <button mat-menu-item (click)="delete()">Delete Note</button>
+    </mat-menu>
+    <button class="aSingleNoteMenu"[matMenuTriggerFor]="noteMenu">
+      <mat-icon>
+        more_vert
+      </mat-icon>
+    </button>
+  </div>
+<div class="viewNote">
+  <span class="title">{{this?.title}}</span>
+  <ckeditor *ngIf="editorReady" [editor]="editor" data="{{this.noteContent}}" (change)="onChange($event)"
+  ></ckeditor>
+</div>
+  <div>
+    <button mat-button (click)="goBack()">Go back</button>
+  </div>
+</mat-card>

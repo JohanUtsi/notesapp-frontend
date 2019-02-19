@@ -1,0 +1,39 @@
+
+<mat-card>
+  <form *ngIf="initialized"
+        [formGroup]="registerForm"
+        (ngSubmit)="submit()"
+        class="registerForm"
+  >
+  <mat-form-field>
+    <input matInput placeholder="Username"
+           formControlName="username"
+    >
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Password" type="password"
+           formControlName="password"
+    >
+  </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="E-mail" type="email"
+             formControlName="email"
+      >
+    </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="First name"
+            formControlName="firstName"
+    >
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Last name"
+           formControlName="lastName"
+    >
+  </mat-form-field>
+
+  <button mat-button type="submit" [disabled]="!registerForm.valid">Register
+  </button>
+  </form>
+</mat-card>

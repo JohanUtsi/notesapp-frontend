@@ -1,0 +1,14 @@
+<mat-card>
+  <form [formGroup]="this?.newNoteForm" (ngSubmit)="submit()"
+        class="holder">
+    <mat-form-field>
+      <input matInput formControlName="title" placeholder="Title">
+    </mat-form-field>
+    <ckeditor [editor]="editor" (change)="onChange($event)"
+    ></ckeditor>
+    <div>
+  <button mat-flat-button type="submit">Save</button>
+  <button mat-flat-button type="button" (click)="cancel()">Cancel</button>
+    </div>
+  </form>
+</mat-card>

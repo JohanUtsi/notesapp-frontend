@@ -1,0 +1,7 @@
+<mat-card class="viewholder">
+  <div class="viewNote">
+    <span class="title">{{this?.title}}</span>
+    <ckeditor *ngIf="editorReady" [editor]="editor" data="{{this.noteContent}}"
+    ></ckeditor>
+  </div>
+</mat-card>

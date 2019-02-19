@@ -1,0 +1,16 @@
+.holder{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+:host /deep/ .ck-editor__editable {
+  min-height: 40vh !important;
+  max-width: 490px;
+}
+
+/deep/ .ck-file-dialog-button{
+  display: none !important;
+}

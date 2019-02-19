@@ -1,0 +1,40 @@
+.viewholder{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.viewNote{
+  padding: 5px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: black solid 1px;
+  border-radius: 5px 5px;
+  box-shadow: lightgray 5px 5px;
+  min-width: 490px;
+  max-width: 490px;
+}
+
+.title{
+  font-weight: bold;
+  font-size: large;
+}
+
+/deep/ .ck-sticky-panel{
+  display: none !important;
+}
+
+:host /deep/ .ck-editor__editable {
+  min-height: 40vh !important;
+  max-width: 490px !important;
+
+}
+
+.aSingleNoteMenuHolder{
+  align-self: flex-end;
+}
+

@@ -1,0 +1,55 @@
+:host{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.masterHolder{
+  width: 90%;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.newButton{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+p{
+  margin-left: 2%;
+}
+
+.notesholder{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.singleCard{
+  margin: 1%;
+  width: 20vw;
+  height: 30vh;
+}
+
+.cardContent{
+  width: 15vw;
+  height: 15vh;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.title{
+  width: 15vw;
+  height: 5vh;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
